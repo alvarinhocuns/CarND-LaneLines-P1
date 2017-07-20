@@ -13,7 +13,19 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./test_images_output/step1.jpg "Grayscale"
+
+[image2]: ./test_images_output/step2.jpg "Filtered"
+
+[image3]: ./test_images_output/step3.jpg "Edges"
+
+[image4]: ./test_images_output/step4.jpg "Interesting"
+
+[image5]: ./test_images_output/step5.jpg "Detection"
+
+[image6]: ./test_images_output/step6.jpg "Extrapolation"
+
+[image7]: ./test_images_output/step9-result.jpg "Result"
 
 ---
 
@@ -27,27 +39,27 @@ I created a function called DetectLines() where I included all the steps. These 
 
 # 1) Convert image to gray scale
 
-![alt text][test_images_output/step1.jpg]
+![alt text][image1]
 
 # 2) Apply a gauss filter to remove noise
 
-![alt text][test_images_output/step2.jpg]
+![alt text][image2]
 
 # 3) Detect borders using canny edge detection
 
-![alt text][test_images_output/step3.jpg]
+![alt text][image3]
 
 # 4) Select only the interesting region of the image
 
-![alt text][test_images_output/step4.jpg]
+![alt text][image4]
 
 # 5) Detect lines in this region using the Hough transform
 
-![alt text][test_images_output/step5.jpg]
+![alt text][image5]
 
 # 6) Extrapolate the detected lines to the whole interesting region
 
-![alt text][test_images_output/step6.jpg]
+![alt text][image6]
 
 # 7) Divide the lines in two side groups
 
@@ -55,7 +67,7 @@ I created a function called DetectLines() where I included all the steps. These 
 
 # 9) Average the lines
 
-![alt text][test_images_output/step9.jpg]
+![alt text][image7]
 
 
 # Additional steps
