@@ -37,40 +37,40 @@ My pipeline consisted of 9 steps, that were increased to 11 steps to work on vid
 
 I created a function called DetectLines() where I included all the steps. These steps are:
 
-# 1) Convert image to gray scale
+#### 1) Convert image to gray scale
 
 ![alt text][image1]
 
-# 2) Apply a gauss filter to remove noise
+#### 2) Apply a gauss filter to remove noise
 
 ![alt text][image2]
 
-# 3) Detect borders using canny edge detection
+#### 3) Detect borders using canny edge detection
 
 ![alt text][image3]
 
-# 4) Select only the interesting region of the image
+#### 4) Select only the interesting region of the image
 
 ![alt text][image4]
 
-# 5) Detect lines in this region using the Hough transform
+#### 5) Detect lines in this region using the Hough transform
 
 ![alt text][image5]
 
-# 6) Extrapolate the detected lines to the whole interesting region
+#### 6) Extrapolate the detected lines to the whole interesting region
 
 ![alt text][image6]
 
-# 7) Divide the lines in two side groups
+#### 7) Divide the lines in two side groups
 
-# 8) Remove the outliers with the m or b parameters 3sigma away from the mean
+#### 8) Remove the outliers with the m or b parameters 3sigma away from the mean
 
-# 9) Average the lines
+#### 9) Average the lines
 
 ![alt text][image7]
 
 
-# Additional steps
+#### Additional steps
 Moreover, as I already mentioned, in order to work with the videos I included two more steps.
 
 After processing the videos, the obtained lines showed a very nervous behavior because of the refresh frequency. Furthermore, in very tiny instants, the system cannot find some lines. To avoid this I created a low frequency pass filter that averages the result of the more recent results.
